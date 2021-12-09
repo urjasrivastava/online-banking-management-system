@@ -2,17 +2,26 @@
 Online banking system in linux.
 
 =========================================================================================================================================
+<br/>
 Limitations of this system-
+<br/>
 1. If an ill-formed field is entered then only an admin can reset them.
 2. Accounts once deleted cannot be retrieved.
 3. Account number of deleted accounts cannot be reassigned.
 4. Password if forgotten by user can only be reset by admin.
+<br/>
 =========================================================================================================================================
+<br/>
 How to run the project-
+<br/>
 Extract this compressed project folder.
+<br/>
 Change directory to this project folder.For example - cd /home/user/urja/Desktop/miniproject
+<br/>
 Run the server.out file.
+<br/>
 Run the client.out file.
+<br/>
 ==========================================================================================================================================
 Server.c
 ******************************************************************************************************************************************
