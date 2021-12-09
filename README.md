@@ -1,7 +1,7 @@
 # OnlineBanking
 Online banking system in linux.
 
-=========================================================================================================================================
+========================================================================================
 <br/>
 Limitations of this system-
 <br/>
@@ -10,7 +10,7 @@ Limitations of this system-
 3. Account number of deleted accounts cannot be reassigned.
 4. Password if forgotten by user can only be reset by admin.
 <br/>
-=========================================================================================================================================
+=========================================================================================
 <br/>
 How to run the project-
 <br/>
@@ -22,16 +22,22 @@ Run the server.out file.
 <br/>
 Run the client.out file.
 <br/>
-==========================================================================================================================================
+==========================================================================================
+<br/>
 Server.c
-******************************************************************************************************************************************
+<br/>
+*******************************************************************************************
+<br/>
 Functions 
 
 1. singlewindow(int fd)
-
+<br/>
 PARAMETERS- Client socket file Descriptor
+<br/>
 RETURN VALUE- Void
+<br/>
 DESCRIPTION- handles single user accounts and provides the following functionality
+<br/>
 1. Deposit- deposit money into your account.
 2. Withdraw- withdraw money from your account.Checks for negative balance
 3. Balance Inquiry- check available balance
@@ -40,10 +46,13 @@ DESCRIPTION- handles single user accounts and provides the following functionali
 6. Exit- exit from the system
 
 2. jointwindow(int fd)
-
+<br/>
 PARAMETERS- Client socket file Descriptor
+<br/>
 RETURN VALUE- Void
+<br/>
 DESCRIPTION- handles joint user accounts and provides the following functionality
+<br/>
 1. Deposit- deposit money into your account.
 2. Withdraw- withdraw money from your account.Checks for negative balance
 3. Balance Inquiry- check available balance
@@ -53,23 +62,35 @@ DESCRIPTION- handles joint user accounts and provides the following functionalit
 
 3. adminwindow(int fd)
 
+<br/>
 PARAMETERS- Client socket file Descriptor
+<br/>
 RETURN VALUE- Void
+<br/>
 DESCRIPTION- handles admin accounts and provides the following functionality
+<br/>
 1. Add- add an admin,single or joint account.
 2. Delete- delete an admin,single or joint account.Permanent deletion
 3. Modify- modify an admin,single or joint account.Transaction logs are not modified.
 4. Search- search for admin,single or joint account details.
 5. Exit- exit from the system.
+<br/>
 ********************************************************************************************************************************************
+<br/>
 Client.c
+<br/>
 ********************************************************************************************************************************************
+<br/>
 1. Get reply for server and show it to the user.
 2. Read query and responses from user and send it to server.
 3. Using getpass for taking a password as input from user.
+<br/>
 *********************************************************************************************************************************************
+<br/>
 Header Files
+<br/>
 *********************************************************************************************************************************************
+<br/>
 1. Summary.h
 
 * Keeps count of unique account numbers allocated by the system.
@@ -85,5 +106,6 @@ Header Files
 4. Admin.h
 
 * Structure of the admin database.
+<br/>
 
 **********************************************************************************************************************************************
